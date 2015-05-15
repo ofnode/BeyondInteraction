@@ -1,5 +1,7 @@
 # OF-specific ignore patterns
 
+bin/
+
 openFrameworks.a
 openFrameworksDebug.a
 openFrameworksUniversal.a
