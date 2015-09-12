@@ -26,8 +26,8 @@ void testApp::draw(){
     //ムービーのビットマップデータを解析し、配列に格納
     unsigned char * pixels = fingersMovie.getPixels();
     //画像を8ピクセルごとにスキャン
-    for (int i = 0; i < fingersMovie.width; i+=8){
-        for (int j = 0; j < fingersMovie.height; j+=8){
+    for (int i = 0; i < fingersMovie.getWidth(); i+=8){
+        for (int j = 0; j < fingersMovie.getHeight(); j+=8){
             //RGBそれぞれのピクセルの明度を取得
             unsigned char r = pixels[(j * 320 + i)*3];
             unsigned char g = pixels[(j * 320 + i)*3+1];
