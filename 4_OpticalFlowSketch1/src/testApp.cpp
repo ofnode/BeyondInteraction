@@ -184,9 +184,9 @@ void testApp::update(){
 
 	if (bNewFrame){
 		#ifdef _USE_LIVE_VIDEO
-            src_image.setFromPixels(vidGrabber.getPixels(), VIDEO_WIDTH, VIDEO_HEIGHT);
+            src_image.setFromPixels(vidGrabber.getPixels().getData(), VIDEO_WIDTH, VIDEO_HEIGHT);
 	    #else
-            src_image.setFromPixels(vidPlayer.getPixels(), VIDEO_WIDTH, VIDEO_HEIGHT);
+            src_image.setFromPixels(vidPlayer.getPixels().getData(), VIDEO_WIDTH, VIDEO_HEIGHT);
         #endif
 		
 		// オプティカルフロー処理

@@ -23,7 +23,7 @@ void testApp::draw(){
     ofSetColor(0xffffff);
     vidGrabber.draw(20,20);
     //ムービーのビットマップデータを解析し、配列に格納
-    unsigned char * pixels = vidGrabber.getPixels();
+    unsigned char * pixels = vidGrabber.getPixels().getData();
     //画像を10ピクセルごとにスキャン
     for (int i = 0; i < camWidth; i+=10){
         for (int j = 0; j < camHeight; j+=10){

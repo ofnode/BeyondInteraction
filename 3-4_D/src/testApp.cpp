@@ -16,7 +16,7 @@ void testApp::update(){
     //新規のフレームの場合とりこみ実行
     if (bNewFrame){
         //OpenCVで解析するカラー画像領域に取得した映像を格納
-        colorImg.setFromPixels(vidGrabber.getPixels(), 320,240);
+        colorImg.setFromPixels(vidGrabber.getPixels().getData(), 320,240);
     }
 }
 

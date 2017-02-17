@@ -24,7 +24,7 @@ void testApp::draw(){
     //ムービーデータを画面に表示
     fingersMovie.draw(20,20);
     //ムービーのビットマップデータを解析し、配列に格納
-    unsigned char * pixels = fingersMovie.getPixels();
+    unsigned char * pixels = fingersMovie.getPixels().getData();
     //画像を8ピクセルごとにスキャン
     for (int i = 0; i < fingersMovie.getWidth(); i+=8){
         for (int j = 0; j < fingersMovie.getHeight(); j+=8){

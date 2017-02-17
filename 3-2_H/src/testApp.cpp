@@ -19,7 +19,7 @@ void testApp::draw(){
     //読み込んだ画像データを画面に描画
     myImage.draw(20,20);
     //画像データのビットマップ情報を配列に格納
-    unsigned char * pixels = myImage.getPixels();
+    unsigned char * pixels = myImage.getPixels().getData();
     //画像の幅と高さを所得
     int w = myImage.getWidth();
     int h = myImage.getHeight();
